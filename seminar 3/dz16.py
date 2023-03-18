@@ -15,3 +15,10 @@
 n = int(input('Введите количество элементов: '))
 list_1 = [i for i in range(1, n+1)]
 print(list_1)
+count = 0
+x = int(input('Введите число которое вы хотите проверить:'))
+
+for i in list_1:
+    if i == x:
+        count += 1
+print('количество повторяющихся элементов', '->', count)
