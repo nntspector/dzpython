@@ -12,6 +12,9 @@ set_2 = set(int(input()) for i in range(m))
 
 common_elements = sorted(set_1 & set_2)
 
-print("Общие элементы:", end=" ")
-for elem in common_elements:
-    print(elem, end=" ")
+if common_elements:
+    print("Общие элементы:", end=" ")
+    for elem in common_elements:
+        print(elem, end=" ")
+else:
+    print("Общих элементов нет")
