@@ -10,7 +10,7 @@ set_1 = set(int(input()) for i in range(n))
 print('Введите элементы: 2-го множества: ')
 set_2 = set(int(input()) for i in range(m))
 
-common_elements = sorted(set_1 and set_2)
+common_elements = sorted(set_1 & set_2)
 
 if common_elements:
     print("Общие элементы:", end=" ")
